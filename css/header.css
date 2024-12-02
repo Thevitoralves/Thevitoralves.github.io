@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /*Isso serve para que o meu site nao se expanda infinitamente */
+  margin: 0 auto; /*Centraliza elementos de bloco*/
+  padding: 40px 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu a {
+  color: var(--colorc13);
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 1.125rem;
+  display: block; /*Para que os valores de padding e margin sejam aplicados corretamente */
+}
+
+@media (max-width: 880px) {
+  .header {
+    flex-direction: column;
+    padding: 24px 12px;
+    gap: 20px;
+  }
+
+  .menu a {
+    background-color: var(--colorc1);
+    border-radius: 4px;
+    padding: 16px 20px;
+    min-width: 100px; /*Para os elementos terem a mesma largura*/
+  }
+}

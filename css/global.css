@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Fira Sans", "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color13);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Variaveis para as cores definidas no figma*/
+
+:root {
+  --colorc1: #f5f5f5;
+  --colorc2: #f0f0f0;
+  --colorc3: #e0e0e0;
+  --colorc4: #cccccc;
+  --colorc5: #b8b8b8;
+  --colorc6: #a3a3a3;
+  --colorc7: #8f8f8f;
+  --colorc8: #7a7a7a;
+  --colorc9: #666666;
+  --colorc10: #525252;
+  --colorc11: #3d3d3d;
+  --colorc12: #292929;
+  --colorc13: #141414;
+  --gradiente: linear-gradient(to left, #b6f829, #67dd0a);
+}

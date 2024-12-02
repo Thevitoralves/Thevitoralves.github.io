@@ -1,0 +1,161 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  gap: 100px;
+}
+
+.titulo-experiencia {
+  font-size: 8.5rem;
+  max-width: 4ch;
+  font-weight: bold;
+  word-break: break-all;
+  line-height: 1;
+  color: var(--colorc3);
+  text-transform: uppercase;
+}
+
+.texto-experiencia {
+  font-size: 1.625rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: var(--colorc10);
+}
+
+.texto-experiencia strong {
+  color: var(--colorc13);
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 10px 60px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--colorc1);
+  border: 1px solid var(--colorc2);
+  position: relative;
+}
+
+.ano-empresa {
+  position: absolute;
+  left: -100px;
+  top: 22px;
+  width: 80px;
+  text-align: end;
+  color: var(--colorc10);
+  font-size: 0.875rem;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--gradiente);
+  width: 4px;
+  height: 20px;
+  top: 20px;
+  left: -4px;
+}
+
+.titulo-empresa {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: var(--colorc13);
+}
+
+.texto-empresa {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--colorc10);
+}
+
+.habilidades {
+  display: flex;
+  align-content: start; /*Para o elemento nao ocupar toda a caixa, nao creser alem do texto*/
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+.habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1080px) {
+  .experiencia {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .titulo-experiencia {
+    font-size: 3.5rem;
+    text-align: left;
+    color: var(--colorc13);
+    text-transform: capitalize;
+    max-width: initial;
+    align-self: center;
+  }
+
+  .texto-experiencia {
+    margin-bottom: 48px;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .ano-empresa {
+    position: initial;
+    text-align: left;
+    order: 1; /*quando outro elemento nao tiver uma ordem definida, order 1 vai ser o ultimo lugar ocupado*/
+    padding: 4px 8px;
+    place-self: start;
+    border-radius: 4px;
+    background-color: white;
+    width: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  .empresa {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .titulo-experiencia {
+    font-size: 2.7rem;
+    text-align: left;
+  }
+  .titulo-empresa {
+    order: 1;
+  }
+  .texto-empresa {
+    text-align: left;
+    order: 2;
+  }
+  .cargo {
+    order: 3; /*Usei para alterar a ordem do conteudo*/
+  }
+  .habilidades {
+    order: 4;
+  }
+  .ano-empresa {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    width: auto;
+  }
+}
