@@ -26,6 +26,10 @@ footer {
   color: white;
 }
 
+.contato-item a {
+  color: white;
+}
+
 .direitos {
   color: var(--colorc7);
   font-size: 1.125rem;
